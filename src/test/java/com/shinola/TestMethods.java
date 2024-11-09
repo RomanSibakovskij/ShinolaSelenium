@@ -21,7 +21,7 @@ public class TestMethods extends BaseTest{
         homePage.clickCircadian36AutomaticProductLink();
         SingleProductDashboardPage singleProductDashboardPage = new SingleProductDashboardPage(driver);
         //assert the user gets on the right page
-        assertEquals("CIRCADIAN 36", singleProductDashboardPage.getProductName(), "The product name doesn't match expectations or the user is on the wrong page.");
+        assertEquals("CIRCADIAN 36", singleProductDashboardPage.getModelName(), "The product name doesn't match expectations or the user is on the wrong page.");
     }
 
     //homepage main content web element assert test method
