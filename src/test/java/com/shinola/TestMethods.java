@@ -40,6 +40,28 @@ public class TestMethods extends BaseTest{
         assertTrue(homePage.isMainContentFindAStoreLinkDisplayed(), "The 'Find a store' link isn't displayed");
     }
 
+    //single product dashboard page web element assert test method
+    protected void isSingleProductDashboardPageWebElementDisplayed(SingleProductDashboardPage singleProductDashboardPage){
+        //assert product model name is displayed
+        assertTrue(singleProductDashboardPage.isModelNameDisplayed(), "The product model name isn't displayed");
+        //assert product model description is displayed
+        assertTrue(singleProductDashboardPage.isModelDescriptionDisplayed(), "The product model description isn't displayed");
+        //assert product filter aside menu button is displayed
+        assertTrue(singleProductDashboardPage.isFilterAsideMenuButtonDisplayed(), "The product filter aside menu button isn't displayed");
+        //assert product sort by dropdown menu is displayed
+        assertTrue(singleProductDashboardPage.isSortByDropdownMenuDisplayed(), "The product sort by dropdown menu isn't displayed");
+        //assert product name links are displayed (as element list)
+        assertTrue(singleProductDashboardPage.isProductNameLinkDisplayed(), "The product name links aren't displayed");
+        //assert product colors are displayed (as element list)
+        assertTrue(singleProductDashboardPage.isProductColorDisplayed(), "The product colors aren't displayed");
+        //assert product price tags are displayed (as element list)
+        assertTrue(singleProductDashboardPage.isProductPriceTagDisplayed(), "The product price tags aren't displayed");
+        //assert product badge elements are displayed (as element list)
+        assertTrue(singleProductDashboardPage.isProductBadgeElementDisplayed(), "The product badge elements aren't displayed");
+        //assert footer links are displayed (as element list)
+        assertTrue(singleProductDashboardPage.isFooterLinkDisplayed(), "The footer links aren't displayed");
+    }
+
     //general page web element assert (header/footer) test method
     protected void isGeneralPageWebElementDisplayed(HomePage homePage){
         //header web elements
