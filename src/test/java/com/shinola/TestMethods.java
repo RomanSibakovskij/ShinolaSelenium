@@ -8,7 +8,7 @@ public class TestMethods extends BaseTest{
     protected static final Logger logger = LoggerFactory.getLogger(TestMethods.class);
 
     //navigate to 'Circadian 36 Automatic' page test method
-    protected void navigateToCircadian36ProductPageTestNoRegister(HomePage homePage){
+    protected void navigateToCircadian36ProductDashboardPageTestNoRegister(HomePage homePage){
         //click 'accept cookies' button
         homePage.clickAcceptCookiesButton();
         //continue to shop modal button click
@@ -19,6 +19,9 @@ public class TestMethods extends BaseTest{
         isHomePageMainContentDisplayed(homePage);
         //click 'Circadian 36 Automatic' product link
         homePage.clickCircadian36AutomaticProductLink();
+        SingleProductDashboardPage singleProductDashboardPage = new SingleProductDashboardPage(driver);
+        //assert the user gets on the right page
+        assertEquals("CIRCADIAN 36", singleProductDashboardPage.getProductName(), "The product name doesn't match expectations or the user is on the wrong page.");
     }
 
     //homepage main content web element assert test method
