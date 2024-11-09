@@ -24,6 +24,12 @@ public class TestMethods extends BaseTest{
         assertEquals("CIRCADIAN 36", singleProductDashboardPage.getModelName(), "The product name doesn't match expectations or the user is on the wrong page.");
     }
 
+    //'Circadian 36 Automatic' page test method (single product dashboard page)
+    protected void addCircadian36MonsterToCartTest(SingleProductDashboardPage singleProductDashboardPage){
+        //single product dashboard page web element assert
+        isSingleProductDashboardPageWebElementDisplayed(singleProductDashboardPage);
+    }
+
     //homepage main content web element assert test method
     protected void isHomePageMainContentDisplayed(HomePage homePage){
         //assert 'Circadian 36 Automatic' product link is displayed
