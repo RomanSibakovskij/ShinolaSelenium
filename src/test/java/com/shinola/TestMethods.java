@@ -17,6 +17,8 @@ public class TestMethods extends BaseTest{
         isGeneralPageWebElementDisplayed(homePage);
         //homepage main content web element assert
         isHomePageMainContentDisplayed(homePage);
+        //click 'Circadian 36 Automatic' product link
+        homePage.clickCircadian36AutomaticProductLink();
     }
 
     //homepage main content web element assert test method
